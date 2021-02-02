@@ -6,7 +6,7 @@ else
    ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
    dpkg-reconfigure -f noninteractive tzdata
 fi
-chmod +x /xrdp-start.sh
+
 #CREATE USERS.
 # username:passsword:Y
 # username2:password2:Y
