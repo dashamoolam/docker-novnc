@@ -128,6 +128,9 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
+    
+    
+COPY createusers.txt /root/
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
 CMD ["/app/entrypoint.sh"]
